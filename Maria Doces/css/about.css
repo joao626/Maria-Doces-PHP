@@ -36,8 +36,8 @@ header{
     height: 130px;
 }
 .logo{
-    margin-top: 150px;
-    width: 700px;
+    margin-top: 168px;
+    width: 260px;
     
 }
 .carousel {
@@ -88,8 +88,8 @@ header{
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 30px;
-    border: white solid 3px;
-    color: white;
+    border: var(--ternaria) solid 3px;
+    color: var(--ternaria);
     font-size: 45px;
     font-family: niconne,cursive;
 }
@@ -101,10 +101,10 @@ header{
 }
 
 .rodape{
-    height: 310px;
+    height: 420px;
     text-align: center;
     background-color: var(--primaria);
-    color:white;
+    color:var(--ternaria);
     font-family: niconne,cursive;
     font-size: 30px;
     
@@ -115,44 +115,47 @@ header{
     padding-left: 10px;
     padding-bottom: 1px;
     border-radius: 20px;
-    border: white solid 2px;
+    border: var(--ternaria) solid 2px;
     text-decoration: none;
-    color: white;
+    color: var(--ternaria);
     margin-left: -40px;
 }
 .link-insta{
-    border: white solid 2px;
+    border: var(--ternaria) solid 2px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 1px;
     border-radius: 20px;
     text-decoration: none;
-    color: white;
+    color: var(--ternaria);
     margin-left: -40px;
 }
 
 .link-zap{
-    border: white solid 2px;
+    border: var(--ternaria) solid 2px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 1px;
     border-radius: 20px;
     text-decoration: none;
-    color: white;
+    color: var(--ternaria);
     margin-left: -10px;
 
 }
 .icon-face{
-    padding-bottom: 25px;
-    width: 150px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    width: 25px;
 }
 .icon-insta{
-    padding-bottom: 15px;
-    width: 180px;
+    padding-bottom: 20px;
+    width: 50px;
+    margin-right: 50px;
 }
 .icon-zap{
+    margin-right: 20px;
     padding-bottom: 20px;
-    width: 130px;
+    width: 50px;
 }
 .rodape a:hover{
     color: var(--primaria);
@@ -173,9 +176,7 @@ header{
     font-size: 38px;
     text-align: center;
 }
-.conteudo{
-    backdrop-filter: blur(3px);
-}
+
 .conteudo h1{
     padding-top: 20px;
 }
@@ -187,18 +188,128 @@ header{
 }
 
 .icon-login{
-    margin-top: 10px;
-    margin-left: 300px;
+    height: 75px;
+    width: 75px;
+    margin-top: 44px;
+    margin-left: 400px;
+    margin-right: 40px;
 }
 .icon-sign{
-        margin-left: -60px;
+    margin-top: 44px;
+    height: 75px;
+    width: 75px;    
+    margin-left: -30px;
 }
 .login{
     margin-left: -20px;
 }
 .cadastro{
-    margin-left: 650px;
+    margin-left: 580px;
 }
 .rodape h2{
     padding-top: 20px;
+}
+.card-title{
+    font-size: 38px;
+}
+.rodape h2{
+    padding-top: 20px;
+}
+
+.rodape-config{
+    padding-top: 80px;
+}
+.card-text{
+    font-size:26px;
+}
+.card img{
+    border-radius: 20px;
+    border: var(--ternaria) solid 3px;
+    margin-top: 20px;
+    height: 300px;
+    width: 350px;
+    align-items: center;
+}
+
+
+.cards  {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    
+}
+.card-title{
+    padding-right: 20px;
+}
+.card-text{
+    padding-right: 20px;
+}
+.card{
+    padding-left: 23px;
+    border-radius: 20px;
+    border: var(--ternaria) solid 3px;
+    background-color: var(--primaria);
+    color: white;
+    margin-left: 20px;
+    height: 640px;
+    text-align: center;
+    width: 400px;
+}
+.btn{
+    
+    width: 500px;
+    background-color: var(--primaria);
+    color: var(--ternaria);
+    border-radius: 30px;
+    border: 3px solid var(--ternaria);
+    box-shadow: 0 0 15px 9px var(--primaria);
+    margin-top:30px;
+    font-size: 35px;
+    font-family: 'Sevillana', cursive;
+}
+
+
+.btn:hover{
+    border: 3px solid var(--primaria); 
+    background-color: var(--ternaria);
+    color: var(--primaria);
+}
+.separador img{
+    margin-top: -142px;
+    margin-left:800px;
+    height: 320px;
+}
+
+
+.nav-b h2{
+    margin-top: -390px;
+    margin-left: 1300px;
+}
+.nav-b p{
+    padding-top: 50px;
+    width: 350px;
+    margin-left: 1430px;
+}
+.nav-b iframe{
+width: 400px;
+height: 200px;
+margin-left: 1340px;
+margin-top: -10px;
+
+}
+.rodape p{
+    margin-top: -35px;
+}
+.logo-rodape{
+    margin-right: 1100px;
+    margin-top: -400px;
+    width: 400px;
+    
+}
+.separador2{
+    height: 320px;
+    margin-right:850px;
+    margin-top: -520px;
 }
