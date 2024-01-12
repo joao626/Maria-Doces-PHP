@@ -105,7 +105,7 @@ header{
 }
 
 .rodape{
-    height: 420px;
+    padding-top: 40px;
     text-align: center;
     background-color: var(--primaria);
     color:var(--ternaria);
@@ -170,7 +170,7 @@ header{
     border: var(--secundaria) solid 3px;
 }
  .fundo {
-   background-image: url(/img/smooth-white-stucco-wall.jpg);
+   background-image: url(../img/smooth-white-stucco-wall.jpg);
    background-size: cover;
    
 }
