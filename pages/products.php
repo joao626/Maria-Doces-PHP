@@ -90,13 +90,63 @@ include '../includes/header.php';
                   <a href="#" class="btn ">Compre Já</a>
                 </div>
             </div>
+            </div>
+            <div class ="card-4">
+                <div class="card">
+                    <img class="ft-produto" src="../assets/img/palha italiana.png" class="card-img-top" alt="Palha italiana">
+                    <div class="card-body">
+                      <h5 class="card-title">Palha Italiana</h5>
+                      <p class="card-text">Delicie-se com a nossa incrível Palha Italiana, uma explosão de sabor e textura em cada pedacinho!!</p>
+                      <a href="#" class="btn ">Compre Já</a>
+                    </div>
+                </div>
+            <div class="card">
+                <img class="ft-produto" src="../assets/img/sonho.jpg" class="card-img-top" alt="Sonho">
+                <div class="card-body">
+                  <h5 class="card-title">Sonho Caseiro</h5>
+                  <p class="card-text">Explore a doçura dos sonhos com o nosso irresistível Sonho, uma obra-prima de maciez e sabor.!!</p>
+                  <a href="#" class="btn ">Compre Já</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="ft-produto" src="../assets/img/queijadinha.jpg" class="card-img-top" alt="Queijadinha">
+                <div class="card-body">
+                  <h5 class="card-title">Queijadinha</h5>
+                  <p class="card-text">A perfeição no sabor e uma explosão de indulgência em cada pedaço. com uma mistura única de queijo e coco!!</p>
+                  <a href="#" class="btn ">Compre Já</a>
+                </div>
+            </div>
+          </div>
+          <div class ="card-4">
+                <div class="card">
+                    <img class="ft-produto" src="../assets/img/Rocambole.jpg" class="card-img-top" alt="Palha italiana">
+                    <div class="card-body">
+                      <h5 class="card-title">Rocambole</h5>
+                      <p class="card-text">Delicie-se com o nosso exuberante Rocambole de Doce de Leite, uma obra-prima de sabor que vai conquistar o seu paladar!!</p>
+                      <a href="#" class="btn ">Compre Já</a>
+                    </div>
+                </div>
+            <div class="card">
+                <img class="ft-produto" src="../assets/img/Bolo de cenoura.jpg" class="card-img-top" alt="Sonho">
+                <div class="card-body">
+                  <h5 class="card-title">Bolo de cenoura</h5>
+                  <p class="card-text">Desfrute de uma explosão de sabor reconfortante com o nosso Bolo de Cenoura. Cada fatia é uma combinação perfeita!!</p>
+                  <a href="#" class="btn ">Compre Já</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="ft-produto" src="../assets/img/bolo de fuba.jpg" class="card-img-top" alt="Queijadinha">
+                <div class="card-body">
+                  <h5 class="card-title">Bolo de Fubá</h5>
+                  <p class="card-text">Delicie-se com a tradição e o calor do nosso Bolo de Fubá. Cada fatia é um abraço reconfortante de sabor caseiro!!</p>
+                  <a href="#" class="btn ">Compre Já</a>
+                </div>
+            </div>
           </div>
         </div>
         <div class="paralax-direito"></div>
         
-    </main>
- 
-    
+    </main>  
 <?php
 
 include '../includes/footer.php';
