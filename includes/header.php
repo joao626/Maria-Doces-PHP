@@ -1,7 +1,6 @@
 <?php 
 $paginaAtual = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
-$tituloPagina = str_replace('_', ' ', $paginaAtual);
-$tituloPagina = ucwords($tituloPagina);
+
 
 // Caminho dinâmico para o arquivo CSS
 $caminhoCSS = "../assets/css/$paginaAtual.css";
@@ -25,7 +24,7 @@ $caminhoCSS = "../assets/css/$paginaAtual.css";
     <!-- CSS -->
     <link rel="stylesheet" href="<?= $caminhoCSS; ?>">
 
-    <title><?php echo $tituloPagina; ?></title>
+    <title>Maria Doces</title>
 
 </head>
 

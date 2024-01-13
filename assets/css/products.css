@@ -334,6 +334,14 @@ textarea{
     justify-content: space-around;
     margin-bottom: 100px;
 }
+.card-4{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
 .separador img{
     margin-top: -142px;
     margin-left:800px;
