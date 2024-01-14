@@ -1,7 +1,7 @@
 -- Criar o banco de dados
 CREATE DATABASE IF NOT EXISTS Maria_Doces;
 
-USE dona_maria;
+USE Maria_Doces;
 
 
 CREATE TABLE IF NOT EXISTS usuarios (
@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 CREATE TABLE IF NOT EXISTS clientes (
     id_cliente INT PRIMARY KEY AUTO_INCREMENT,
     id_usuario INT UNIQUE,
+    nickname_cliente VARCHAR(100),
     endereco_cliente VARCHAR(255) NOT NULL,
     telefone_cliente VARCHAR(20),
     foto_cliente VARCHAR(255),
