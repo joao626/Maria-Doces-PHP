@@ -45,3 +45,12 @@ CREATE TABLE IF NOT EXISTS itens_pedido (
     quantidade INT NOT NULL,
     FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedido),
     FOREIGN KEY (id_produto) REFERENCES produtos(id_produto));
+
+
+-- nao vamos implementar mas deixa ai 
+-- CREATE TABLE IF NOT EXISTS confirmacao_email (
+--     id_confirmacao INT PRIMARY KEY AUTO_INCREMENT,
+--     token VARCHAR(255) NOT NULL,
+--     confirmado BOOLEAN DEFAULT 0
+-- );
+

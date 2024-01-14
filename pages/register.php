@@ -15,29 +15,29 @@ include '../includes/header.php';
                     <form action="../config/action_register.php" method="POST">
                     
                     <label for="nome" id="nome">Nome </label>
-                    <input type="text" name="nome" id="nome" placeholder="Seu Nome Completo.">
+                    <input type="text" name="nome" id="nome" placeholder="Seu Nome Completo." required>
 
                     <label for="nickname" id ="nickname">Usuário</label>
-                    <input type="text" name="nickname" id="nickname"placeholder="Nome usado para efetuar o login.">
+                    <input type="text" name="nickname" id="nickname"placeholder="Nome usado para efetuar o login." required>
                     
                     <label for="email" id ="email">Email</label>
-                    <input type="email" name="email" id="email"placeholder="Seu Email para Contato.">
+                    <input type="email" name="email" id="email"placeholder="Seu Email para Contato." required>
                     
                     <label for="endereco" id ="endereco">Endereço</label>
-                    <input type="text" name="endereco" id="endereco" placeholder="Seu Endereço Residêncial.">
+                    <input type="text" name="endereco" id="endereco" placeholder="Ex: Rua Maria 55, Bairro, Cidade Tal, Rio de Janeiro" required>
                     <!-- aumenta o endereco ai jao -->
                     
                     <label for="telefone" id="telefone">Número de contato</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999.">
+                    <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999." required>
                     
                     <label for="senha" id ="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="senha" id="password">
+                    <input type="password" name="senha" placeholder="senha" id="password" required>
                     
                     <label for="confirmesenha" id ="senha">Confirme sua senha</label>
-                    <input type="password" name="confirmesenha" placeholder="confirme sua senha" id="confirm_password">
+                    <input type="password" name="confirmesenha" placeholder="confirme sua senha" id="confirm_password" required>
                     
                     <div class="termo">
-                    <input class="radio" type="radio" name="termo" id="termo">
+                    <input class="radio" type="radio" name="termo" id="termo" required>
                     <label  for="termo" id="termo">aceito e concordo com as politicas de privacidade do usuário.</label>
                     </div>
             
