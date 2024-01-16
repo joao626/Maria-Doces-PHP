@@ -50,6 +50,26 @@ header{
     width: 1600px;
   
 }
+.btn-carrousel{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 80px !important;
+    background-color: var(--primaria) !important;
+    color: var(--ternaria) !important;
+    border-radius: 30px !important;
+    border: 3px solid var(--ternaria) !important;
+    box-shadow: 0 0 15px 9px var(--primaria) !important;
+    margin-top:1px !important;
+    font-size: 20px !important;
+    font-family: 'Sevillana', cursive !important;
+}
+
+
+.btn-carrousel:hover{
+    border: 3px solid var(--primaria); 
+    background-color: var(--ternaria);
+    color: var(--primaria);
+}
 .carousel  img{
     height: 1000px;
 }
@@ -230,7 +250,5 @@ margin-top: -10px;
     
 }
 .separador2{
-    height: 320px;
-    margin-right:850px;
-    margin-top: -520px;
+    width: 100px;
 }

@@ -12,6 +12,8 @@
   <div class="separador">
     <img src="../assets/img/separador.png" alt="separador">
   </div>
+    <img class="separador2" src="../assets/img/bord.svg" alt="separador2">
+  
   <div class="nav-b">
     <h2>Nossa Localização</h2>
     <p>Rua Francisco Alves Nº 85 - Nova América - RJ</p>
@@ -21,7 +23,9 @@
   <img class="logo-rodape" src="../assets/img/logo rodape.png" alt="logo do rodape">
   <img class="separador2" src="../assets/img/separador.png" alt="separador">
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
