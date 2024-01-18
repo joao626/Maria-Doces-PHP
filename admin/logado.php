@@ -6,4 +6,7 @@ if (!isset($_SESSION['nivel']) || $_SESSION['nivel'] != 'admin') {
     exit();
 }
 
+
+    
+
 ?>
