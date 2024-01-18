@@ -33,10 +33,10 @@ $caminhoCSS = "../assets/css/$paginaAtual.css";
     <header>
         <nav class="nav-bar">
             <li><a href="../pages/index.php">Página Inicial</a></li>
-            <li><a href="../pages/products.php"  >Produtos</a></li>
-            <li><img class="logo" src="../assets/img/teste2.png" alt="logo da loja maria doces"></li>
-            <li><a href="../pages/contacts.php"  >Contato</a></li>
             <li><a href="../pages/about.php"  >Nossa História</a></li>
+            <li><img class="logo" src="../assets/img/teste2.png" alt="logo da loja maria doces"></li>
+            <li><a href="../pages/products.php"  >Produtos</a></li>
+            <li><a href="../pages/contacts.php"  >Contato</a></li>
         </nav>
     </header>
 

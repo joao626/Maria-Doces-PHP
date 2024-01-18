@@ -40,6 +40,7 @@ header{
     height: 130px;
 }
 .logo{
+    
     margin-top: 168px;
     width: 260px;
     
@@ -50,7 +51,7 @@ header{
     width: 1600px;
   
 }
-.btn-carrousel{
+.botaoDoSlide{
     width: 300px;
     padding: 10px;
     margin-bottom: 80px !important;
@@ -65,10 +66,10 @@ header{
 }
 
 
-.btn-carrousel:hover{
-    border: 3px solid var(--primaria); 
-    background-color: var(--ternaria);
-    color: var(--primaria);
+.botaoDoSlide:hover{
+    border: 3px solid var(--primaria) !important; 
+    background-color: var(--ternaria) !important;
+    color: var(--primaria)!important;
 }
 .carousel  img{
     height: 1000px;
@@ -250,5 +251,7 @@ margin-top: -10px;
     
 }
 .separador2{
-    width: 100px;
+    height: 320px;
+    margin-right:850px;
+    margin-top: -520px;
 }
