@@ -27,7 +27,6 @@ CREATE TABLE IF NOT EXISTS clientes (
     numero INT,
     uf CHAR(2),
     telefone_cliente VARCHAR(20),
-    foto_cliente VARCHAR(255),
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
 
