@@ -4,6 +4,10 @@ include '../includes/header.php';
 
 ?>
 
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- api de cep -->
+        
+
         <div class = "container">
             <div class ="paralax-esquerda">
             </div>
@@ -23,12 +27,28 @@ include '../includes/header.php';
                     <label for="email" id ="email">Email</label>
                     <input type="email" name="email" id="email"placeholder="Seu Email para Contato." required>
                     
-                    <label for="endereco" id ="endereco">Endereço</label>
-                    <input type="text" name="endereco" id="endereco" placeholder="Ex: Rua Maria 55, Bairro, Cidade Tal, Rio de Janeiro" required>
-                    <!-- aumenta o endereco ai jao -->
-                    
+                    <label for="endereco" id ="endereco"> ===== Área de Endereço ===== </label>
+    
+                    <label for="cep">Cep</label>
+                    <input type="text" name="cep" id="cep" placeholder="00000-000"> 
+
+                    <label for="bairro" id ="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="neighborhood" placeholder="Bairro">
+
+                    <label for="rua" id ="rua">Rua</label>
+                    <input type="text" name="rua" id="street" placeholder="Rua">
+
+                    <label for="numero" id ="numero">Número</label>
+                    <input type="number" name="numero" id="numero" placeholder="Digite o número da sua casa">
+
+                    <label for="cidade" id ="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="city" placeholder="Cidade">
+
+                    <label for="uf" id ="uf">UF</label>
+                    <input type="text" name="uf" id="state" placeholder="UF do estado. Ex: RJ">
+
                     <label for="telefone" id="telefone">Número de contato</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999." required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(99) 99999-9999." required><br>
                     
                     <label for="senha" id ="senha">Senha</label>
                     <input type="password" name="senha" placeholder="senha" id="password" required>
@@ -65,6 +85,55 @@ include '../includes/header.php';
             password.onchange = validatePassword;
             confirm_password.onkeyup = validatePassword;
         </script>
+
+
+
+    <script>
+
+        window.onload = () => {
+            const cepInput = document.getElementById('cep');
+            cepInput.addEventListener('keyup', async (event) => {
+                var cep = cepInput.value.replace(/([.-])/g, '');
+
+
+                if(cep.length == 8) {
+
+                    const data = await findCEP(cep);
+
+                    if(data.erro){
+                        cepInput.style.border = '1px solid #a53c3c';
+                    } else {
+                        cepInput.style.border = '1px solid #ccc';
+                        document.getElementById('neighborhood').value = data.bairro || '...';
+                        document.getElementById('street').value = data.logradouro || '...';
+                        document.getElementById('city').value = data.localidade || '...';
+                        document.getElementById('state').value = data.uf || '...';
+                    }
+                } else {
+                    cepInput.style.border = '1px solid #ccc';
+                    document.getElementById('neighborhood').value = '';
+                    document.getElementById('street').value = '';
+                    document.getElementById('city').value = '';
+                    document.getElementById('state').value = '';
+                }
+
+                if(cep.length > 8) {
+                    cepInput.style.border = '1px solid #a53c3c';
+                }
+
+            });
+
+        }
+
+        async function findCEP(cep) {
+            
+            const response = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
+            const data = response.data;
+
+            return data;
+        }
+
+    </script>
 
     </main>
   
