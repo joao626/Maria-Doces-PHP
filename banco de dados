@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 );
 
 INSERT INTO usuarios (nome_usuario, email_usuario, senha_usuario, nivel) 
-VALUES ('administrador', 'adm@gmail.com', 12345678, 'admin')
+VALUES ('administrador', 'adm@gmail.com', SHA2('12345678', 256), 'admin')
 
 CREATE TABLE IF NOT EXISTS clientes (
     id_cliente INT PRIMARY KEY AUTO_INCREMENT,
