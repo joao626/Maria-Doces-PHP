@@ -36,8 +36,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["entrar"])) {
         echo "<h2 style='color:green'>Login bem-sucedido!</h2>";
 
         header("refresh:3; url=../$nivel/logado.php");
+    }
+    elseif (hash('sha256', $password) == $row['senha_usuario']){ //para os administradores e funcionarios adicionados diretamente no banco
+        $_SESSION['id_usuario'] = $row['id_usuario']; 
+        $_SESSION['nivel'] = $nivel; 
 
-       
+        echo "<h2 style='color:green'>Login bem-sucedido!</h2>";
+        header("refresh:3; url=../$nivel/logado.php");
+    
     } else {
         echo "<h2 style='color:red'>Senha incorreta</h2>";
     }
