@@ -12,6 +12,9 @@ CREATE TABLE IF NOT EXISTS usuarios (
     nivel ENUM('funcionario', 'admin', 'cliente') NOT NULL
 );
 
+INSERT INTO usuarios (nome_usuario, email_usuario, senha_usuario, nivel) 
+VALUES ('administrador', 'adm@gmail.com', 12345678, 'admin')
+
 CREATE TABLE IF NOT EXISTS clientes (
     id_cliente INT PRIMARY KEY AUTO_INCREMENT,
     id_usuario INT UNIQUE,
