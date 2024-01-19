@@ -16,7 +16,13 @@ CREATE TABLE IF NOT EXISTS clientes (
     id_cliente INT PRIMARY KEY AUTO_INCREMENT,
     id_usuario INT UNIQUE,
     nickname_cliente VARCHAR(100),
-    endereco_cliente VARCHAR(255) NOT NULL,
+    -- endereco_cliente VARCHAR(255) NOT NULL, atualizado!
+    cep VARCHAR(12),
+    bairro VARCHAR(20),
+    cidade VARCHAR(20),
+    rua VARCHAR(20),
+    numero INT,
+    uf CHAR(2),
     telefone_cliente VARCHAR(20),
     foto_cliente VARCHAR(255),
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
