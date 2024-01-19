@@ -6,4 +6,6 @@ if (!isset($_SESSION['nivel']) || $_SESSION['nivel'] != 'cliente') {
     exit();
 }
 
+include './includes/header.php';
+
 ?>
