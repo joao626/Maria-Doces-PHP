@@ -38,11 +38,22 @@ header{
     justify-content: center;
     height: 130px;
 }
+
 .logo{
     margin-top: 168px;
-     width: 260px;
+    width: 260px;
+    margin-right:208px;
     
 }
+.produto{
+    position: relative;
+    right: 90%;
+}
+.contato{
+    position: relative;
+    right: 100%;
+}
+
 .carousel {
     border-top: 2px solid var(--primaria);
     width: 1600px;

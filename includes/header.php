@@ -35,8 +35,8 @@ $caminhoCSS = "../assets/css/$paginaAtual.css";
             <li><a href="../pages/index.php">Página Inicial</a></li>
             <li><a href="../pages/about.php"  >Nossa História</a></li>
             <li><img class="logo" src="../assets/img/teste2.png" alt="logo da loja maria doces"></li>
-            <li><a href="../pages/products.php"  >Produtos</a></li>
-            <li><a href="../pages/contacts.php"  >Contato</a></li>
+            <li><a class="produto" href="../pages/products.php"  >Produtos</a></li>
+            <li><a class="contato" href="../pages/contacts.php"  >Contato</a></li>
         </nav>
     </header>
 

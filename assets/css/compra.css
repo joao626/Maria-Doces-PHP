@@ -21,6 +21,145 @@ a{
     color:var(--primaria);
 }
 
+form{
+    display: flex;
+    font-size: 30px;
+    position: relative;
+    left: 50%;
+    bottom: 150%;
+}
+.tipo{
+position: relative;
+bottom: 180px;
+left: 190px;
+}
+#tipo{
+    background-color: var(--primaria);
+color: var(--ternaria);
+border-radius: 30px;
+border: 3px solid var(--ternaria);
+margin-top:1px;
+font-size: 24px;
+    position: relative;
+    bottom: 130px;
+    left: 60px; 
+    text-align: center;
+}
+#tipo:hover{
+    border: 3px solid var(--primaria); 
+    background-color: var(--ternaria);
+    color: var(--primaria);
+}
+.sabor{
+position: relative;
+bottom: 180px;
+left: 160px;
+}
+#sabor{
+position: relative;
+ bottom: 130px;
+ left: 30px; 
+ width: 210px;
+background-color: var(--primaria);
+color: var(--ternaria);
+border-radius: 30px;
+border: 3px solid var(--ternaria);
+margin-top:1px;
+font-size: 24px;
+text-align: center;
+}
+#sabor:hover{
+    border: 3px solid var(--primaria); 
+    background-color: var(--ternaria);
+    color: var(--primaria);
+}
+.uni{
+position: relative;
+bottom: 265px;
+right: 686px;
+}
+#quantidade{ 
+position: relative;
+bottom: 268px;
+right: 676px;
+width: 50px;
+background-color: var(--primaria);
+color: var(--ternaria);
+border-radius: 30px;
+border: 3px solid var(--ternaria);
+box-shadow: 0 0 15px 9px var(--primaria);
+margin-top:1px;
+font-size: 24px;
+font-family: 'roboto', cursive;
+text-align: center;
+}
+#quantidade:hover{
+    border: 3px solid var(--primaria); 
+    background-color: var(--ternaria);
+    color: var(--primaria);
+}
+.ad{
+background-color: var(--primaria);
+color: var(--ternaria);
+border-radius: 30px;
+border: 3px solid var(--ternaria);
+box-shadow: 0 0 15px 9px var(--primaria);
+margin-top:1px;
+font-size: 24px;
+font-family: 'roboto', cursive;
+    position: relative;
+    bottom: 268px;
+    right: 660px;
+    width: 50px;  
+}
+.ad:hover{
+    border: 3px solid var(--primaria); 
+    background-color: var(--ternaria);
+    color: var(--primaria);
+}
+.rt{
+background-color: var(--primaria);
+color: var(--ternaria);
+border-radius: 30px;
+border: 3px solid var(--ternaria);
+box-shadow: 0 0 15px 9px var(--primaria);
+margin-top:1px;
+font-size: 24px;
+font-family: 'roboto', cursive;
+    position: relative;
+    bottom: 268px;
+    right: 650px;
+    width: 50px;
+}
+.rt:hover{
+    border: 3px solid var(--primaria); 
+    background-color: var(--ternaria);
+    color: var(--primaria);
+}
+.pagamento{
+position: relative;
+bottom: 50px;
+right: 320px;
+width: 200px;
+}
+#pay{
+width: 220px;
+    position: relative;
+right: 526px;
+background-color: var(--primaria);
+color: var(--ternaria);
+border-radius: 30px;
+border: 3px solid var(--ternaria);
+margin-top:1px;
+font-size: 24px;
+text-align: center;
+}
+#pay:hover{
+    border: 3px solid var(--primaria); 
+    background-color: var(--ternaria);
+    color: var(--primaria);
+}
+
 header{
     
     font-size: 38px;
@@ -35,7 +174,6 @@ header{
     justify-content: center;
     height: 130px;
 }
-
 .logo{
     margin-top: 168px;
     width: 260px;
@@ -74,7 +212,7 @@ header{
     background-position: center;
     margin-left: -15px;
     margin-top: 0px;
-    width: 200px;
+    width: 250px;
     
     
 }
@@ -85,7 +223,7 @@ header{
     background-position: center;
     margin-right: -556px;
     margin-top: 0px;
-    width: 200px;
+    width: 250px;
     
     
 }
@@ -99,7 +237,7 @@ header{
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 30px;
-    border: var(--ternaria) solid 3px;
+    border:  var(--ternaria) solid 3px;
     color: var(--ternaria);
     font-size: 45px;
     font-family: niconne,cursive;
@@ -118,6 +256,7 @@ header{
     color:var(--ternaria);
     font-family: niconne,cursive;
     font-size: 30px;
+    
     
 }
 
@@ -149,19 +288,20 @@ header{
     padding-bottom: 1px;
     border-radius: 20px;
     text-decoration: none;
-    color: var(--ternaria);
+    color:var(--ternaria);
     margin-left: -10px;
 
 }
 .icon-face{
-    margin-right: 50px;
-    margin-bottom: 20px;
+   margin-right: 50px;
     width: 25px;
+   margin-bottom: 20px; 
+    
 }
 .icon-insta{
+    margin-right: 50px;
     padding-bottom: 20px;
     width: 50px;
-    margin-right: 50px;
 }
 .icon-zap{
     margin-right: 20px;
@@ -177,29 +317,40 @@ header{
     background-image: url(../img/smooth-white-stucco-wall.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   
-}
-.content{
-    
-    width: 1600px;
-    font-family: 'Sevillana', cursive;
-    color: var(--primaria);
-    font-size: 38px;
-    text-align: center;
 }
 
 .conteudo h1{
     padding-top: 20px;
 }
+.card{
+    padding-left: 23px;
+    border-radius: 20px;
+    border: var(--ternaria) solid 3px;
+    background-color: var(--primaria);
+    color:var(--ternaria);
+    
+    height: 650px;
+    text-align: center;
+    width: 1300px;
+}
+.content{
+    
+    width: 1400px;
+    font-family: 'Sevillana', cursive;
+    color: var(--primaria);
+    font-size: 38px;
+    text-align: center;
+}
 .content h1 {
     font-size: 60px;
 }
 .content img{
+    
     width: 300px;
 }
 
 .icon-login{
-    height: 75px;
+   height: 75px;
     width: 75px;
     margin-top: 44px;
     margin-left: 400px;
@@ -220,25 +371,59 @@ header{
 .rodape h2{
     padding-top: 20px;
 }
-.card-title{
-    font-size: 38px;
-}
-.rodape h2{
-    padding-top: 20px;
-}
 
 .rodape-config{
     padding-top: 80px;
 }
+
+
+
+.btn{
+    
+    width: 160px;
+    background-color: var(--primaria);
+    color: var(--ternaria);
+    border-radius: 30px;
+    border: 3px solid var(--ternaria);
+    box-shadow: 0 0 15px 9px var(--primaria);
+    margin-top:1px;
+    font-size: 24px;
+    font-family: 'Sevillana', cursive;
+    position: relative;
+    left:320px;
+    bottom: 70%;
+}
+
+
+.btn:hover{
+    border: 3px solid var(--primaria); 
+    background-color: var(--ternaria);
+    color: var(--primaria);
+}
+.card-title{
+    font-size: 38px;
+    position: relative;
+    left: 25%;
+    bottom: 185%;
+}
+.card-title2{
+    font-size: 50px;
+    position: relative;
+    left: 10%;
+    bottom: 700px;
+}
 .card-text{
+    position: relative;
+    left: 25%;
+    bottom: 185%;
     font-size:26px;
 }
 .card img{
     border-radius: 20px;
     border: var(--ternaria) solid 3px;
     margin-top: 20px;
-    height: 300px;
-    width: 350px;
+    height: 600px;
+    width: 600px;
     align-items: center;
 }
 
@@ -250,6 +435,7 @@ header{
     justify-content: space-around;
     margin-bottom: 100px;
     
+    
 }
 .card-title{
     padding-right: 20px;
@@ -257,36 +443,29 @@ header{
 .card-text{
     padding-right: 20px;
 }
-.card{
-    padding-left: 23px;
-    border-radius: 20px;
-    border: var(--ternaria) solid 3px;
-    background-color: var(--primaria);
-    color: white;
-    margin-left: 20px;
-    height: 640px;
-    text-align: center;
-    width: 400px;
+
+.card-2{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }
-.btn{
-    
-    width: 500px;
-    background-color: var(--primaria);
-    color: var(--ternaria);
-    border-radius: 30px;
-    border: 3px solid var(--ternaria);
-    box-shadow: 0 0 15px 9px var(--primaria);
-    margin-top:30px;
-    font-size: 35px;
-    font-family: 'Sevillana', cursive;
+.card-3{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.card-4{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }
 
-
-.btn:hover{
-    border: 3px solid var(--primaria); 
-    background-color: var(--ternaria);
-    color: var(--primaria);
-}
 .separador img{
     margin-top: -142px;
     margin-left:800px;
@@ -324,4 +503,3 @@ margin-top: -10px;
     margin-right:850px;
     margin-top: -520px;
 }
-
